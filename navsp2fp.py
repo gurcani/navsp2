@@ -24,7 +24,7 @@ nufn = lambda ksqr,nu=1e-8,nuL=1e-8 : nu*ksqr**2+nuL*oneover(ksqr**4)
 
 nthreads=16
 set_num_threads(nthreads)
-zeros=pyfw.empty_aligned
+zeros=pyfw.zeros_aligned
 
 def hsymmetrize(uk): #Hermitian symmetrize a 2D array
     Nx=uk.shape[0]
